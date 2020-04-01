@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+$text-color: #ff861d
+
+a
+  font-family: monospace
+
+.ant-layout, .ant-layout-header, .ant-layout-sider, .ant-menu, .ant-menu-item,
+.ant-menu-item-selected, .ant-menu:not(.ant-menu-horizontal)
+  background-color: #000 !important
+  color: $text-color
+
+.ant-menu-item > a, .ant-menu-item > a:hover, .ant-menu-submenu-selected,
+.ant-menu-submenu-title:hover
+  color: $text-color
+
+.ant-menu-vertical .ant-menu-item::after, .ant-menu-vertical-left .ant-menu-item::after,
+.ant-menu-vertical-right .ant-menu-item::after, .ant-menu-inline .ant-menu-item::after
+  border-right: 3px solid $text-color
+
+.ant-menu-item > a:hover, .ant-menu-submenu-title:hover
+  font-weight: bold
+
+.ant-menu-inline
+  border-right: none
