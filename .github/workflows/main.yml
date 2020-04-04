@@ -6,7 +6,7 @@ name: CI
 # events but only for the master branch
 on:
   push:
-    branches: [ release/* ]
+    branches: [ master ]
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -24,7 +24,7 @@ jobs:
         node-version: '10.x'
     - run: npm install
     - run: npm run build --prod
-    
+
     - name: Copy file via scp
       uses: appleboy/scp-action@master
       env:
