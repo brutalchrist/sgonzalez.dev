@@ -1,5 +1,7 @@
 # sgonzalez.dev
 
+![CI](https://github.com/brutalchrist/sgonzalez.dev/workflows/CI/badge.svg?branch=master)
+
 ```
                                                     `
                                           `-``-:://y+.` `:`
